@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="images/Favicon-bgr.jpg">
+        <title>This is A WEBSITE ABOUT ME</title>
+        <!--This is an example of inline css-->
+        <link rel="stylesheet" href="project.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/0ab966c975.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="images/logo-removebg-preview.png" alt="" style="height: 40px;width: 40px;">
+                    <h2>AKASH</h2>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="nav">
+                    <ul class="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="button"><button><a href="contacts.html">Let's Talk</a></button></div>
+            </nav>
+
+        </header>
+        
+
+        <main>
+
+            <section class="projects_hero">
+                <h4>MY WORK</h4>
+                <h1><span id="name">PROJECTS</span></h1>
+                <p>A collection of projects that reflect my journey in design,engineering and continuous learning.</p>
+           </section>
+           <section class="project_filters">
+                <button data-filter="all">All</button>
+                <button data-filter="cad">CAD</button>
+                <button data-filter="web">Web</button>
+                <button data-filter="future">Future</button>
+            </section>
+
+            <section class="projects_grid">
+                <div class="project_card" data-category="web">
+                    <div class="project_image"></div>
+                    <h3>Portfolio Website</h3>
+                    <h5>Web Project</h5>
+
+                    <p>A modern responsive portfolio website designed to showcase my work, skills and projects.</p>
+
+                    <h4>HTML • CSS • JavaScript</h4>
+
+                    
+                    <div class="project_links">
+                        <button>Live Demo</button>
+                        <button>GitHub</button>
+                    </div>
+                </div>
+
+                <div class="project_card" data-category="web">
+                    <div class="project_image"></div>
+                    <h3>IMDB clone</h3>
+                    <h5>Web Project</h5>
+
+                    <p>An IMDb-inspired movie website built to explore films, ratings and trending content through a clean responsive interface.</p>
+
+                    <h4>HTML • CSS • JavaScript</h4>
+
+                    <div class="project_links">
+                        <a href="https://poetic-cactus-0016ee.netlify.app/" target="_blank"><button>Live Demo</button></a>
+                        <a href="https://github.com/akash-10-ctrl/movie-search-app"><button>GitHub</button></a>
+                    </div>
+
+                </div>
+ 
+                <div class="project_card" data-category="cad">
+                    <div class="project_image"></div>
+
+                    <h3>CAD Model Project</h3>
+                    <h5>CAD Project</h5>
+
+                    <p>Mechanical design project focused on CAD modeling,engineering design and technical accuracy.</p>
+                    <h4>SolidWorks • CAD</h4>
+                    
+                    <div class="project_links">
+                        <button>View Project</button>
+                    </div>
+                </div>
+
+            </section>  
+
+            <div class="project_card future_card" data-category="future">
+                <div class="project_image future_image"></div>
+
+                <h3>Future Projects</h3>
+                <h5>Coming Soon</h5>
+
+                <p>Currently working on expanding my portfolio with CAD,mechanical design and software projects.</p>
+
+                <h4>SolidWorks • Python • CAD • Design</h4>
+            </div>
+
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

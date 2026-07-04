@@ -1,0 +1,432 @@
+/*CSS content for Navigation section*/
+*{
+    box-sizing: border-box;
+}
+body{
+    /*background-color: hsl(220, 16%, 4%);*/
+    background:
+        radial-gradient(circle at top right, hsla(26,80%,50%,0.10), transparent 30%),
+        radial-gradient(circle at bottom left, hsla(280,80%,60%,0.08), transparent 30%),
+        hsl(220,16%,4%);
+    color: white;
+    margin: 0;
+}
+header{
+    margin-bottom: 1px solid white;
+}
+main{
+    margin: 50px;
+    font-family:'Monteserrat',sans-serif ;
+}
+footer{
+    margin: 50px;
+    margin-top: 10px;
+    font-family:'Monteserrat',sans-serif ;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: hsl(26,80%,50%);
+    border-radius: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color:hsl(240, 5%, 8%);
+}
+.logo h2{
+    font-weight: bold;
+    font-family: 'Monteserrat',sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+
+    background: rgba(10,10,10,0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid hsla(26,80%,50%,0.08);
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 30px;
+    font-family: monteserrat,sans-serif;
+}
+.list li{
+    text-align: center;
+    width: 80px;
+    height: 19px;
+
+}
+.nav a:hover{
+    transition: 0.2s;
+    color: hsl(26, 80%, 50%);
+    font-size: 1.1em;
+    border-bottom: 2.5px solid hsl(26, 80%, 50%);
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    gap: 40px;
+}
+.navbar button{
+    display: flex;
+    font-size: 15px;
+    padding: 15px 15px;
+    justify-content: center;
+    width: 150px;
+    border: 1px solid hsl(26, 80%, 50%);
+    border-radius: 10px;
+    background-color: hsl(220, 14%, 4%);
+    color: hsl(26, 80%, 50%);
+}
+.menu-toggle{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+#button a{
+    text-decoration: none;
+    color: hsl(26, 80%, 50%);
+}
+
+/*CSS content for Hero section*/
+.hero{
+    font-family:'Montserrat',sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    min-height: 80vh;
+}
+.hero img:hover{
+    float: right;
+    transition: 1s;
+    animation: pistonMove 2s ease-in-out infinite;
+    filter: drop-shadow(0 0 18px hsla(26,80%,50%,0.35));
+}
+.hero_left{
+    flex: 1;
+}
+.hero_right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.hero_right img{
+    width: 100%;
+    max-width: 550px;
+}
+.hero h1{
+    margin: 0px;
+    font-size: 100px;
+    line-height: 90px;
+}
+#name{
+    background: linear-gradient(90deg, orange, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero h5{
+    font-family:'Montserrat',sans-serif;
+    display: flex;
+    float: left;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.hero h2{
+    font-weight: 500;
+    margin: 0px;
+    padding-left: 12px;
+    letter-spacing: 2px;
+}
+.hero h3{
+    display: flex;
+    font-weight: 10;
+    margin: 0px;
+    letter-spacing: 6px;
+}
+
+.hero p{
+    letter-spacing: 2px;
+    font-weight: 50;
+    line-height: 27px;
+}
+.button{
+    display: flex;
+    align-items:center;
+    gap: 20px;
+}
+.button #b1 button{
+    background-color: hsl(26, 80%, 50%);
+    border:0px ;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-weight: 550;
+    font-family:'Montserrat',sans-serif;
+}
+#b1 button:hover{
+    transition:0.5s;
+    box-shadow: 0px 0px 15px hsla(33, 100%, 50%, 0.637);
+    transform: scale(1.03,1.03);
+}
+#b2 button{
+    background-color: hsl(220, 16%, 4%);
+    color: white;
+    border: 2px solid #242425;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-family:'Montserrat',sans-serif;
+}
+.logo1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/*Footer CSS codings*/
+
+.section{
+    background-color: hsl(225, 10%, 8%);
+    border-radius: 10px;
+    margin: 15px auto;
+    width: 98%;
+    font-family:'Montserrat',sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+} 
+.left{
+    float: left;
+}  
+.left h3{
+    color: hsl(26, 80%, 50%);
+    margin: 0px;
+    line-height: 0px;
+}
+.left h1{
+    margin: 0px;
+}
+.middle button{
+    background-color: hsl(225, 10%, 8%);
+    border: 2px solid #242425;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-family:'Montserrat',sans-serif;
+}
+.middle a{
+    text-decoration: none;
+    color: white;
+}
+.right{
+    display: flex;
+    align-items:end;
+}
+.right img{
+    height: 150px;
+    width: 125px;
+}
+.right h4{
+    font-weight: 100;
+    font-size: 15px;
+}
+.right .right_element{
+    font-weight: 400;
+    color: hsl(26, 80%, 50%);
+}
+
+
+
+/*Making it responsive*/
+@media (max-width: 1024px){
+
+    h1{
+        font-size: 60px !important;
+    }
+
+    h2{
+        font-size: 42px !important;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    .navbar{
+        padding: 20px 20px;
+    }
+    .list{
+        gap: 20px;
+    }
+    #button{
+        display: none;
+        
+    }
+
+}
+@media (max-width: 1024px){
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero_left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button{
+        justify-content: center;
+    }
+
+    .logo1{
+        justify-content: center;
+    }
+    .hero h1{
+        font-size: 70px;
+        line-height: 70px;
+    }
+}
+@media (max-width: 768px){
+    
+    .hero h1{
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .hero h3{
+        letter-spacing: 6px;
+    }
+    .section{
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .hero_right{
+        display: none;
+    }
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .hero_left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media (max-width: 480px){
+    .hero h1{
+        font-size: 48px;
+        line-height: 50px;
+    }
+    .hero_right{
+        display: none;
+    }
+    .hero h1{
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    .hero h2{
+        font-size: 18px;
+    }
+
+    .hero h3{
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+    .hero p{
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+    }
+}
+@media (max-width:768px){
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav,
+    #button{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    .nav,
+    #button{
+        display:none;
+    }
+}
+@media (max-width:768px){
+
+    .nav.active{
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        width: 200px;
+        background: hsl(220,16%,8%);
+        border-radius: 10px;
+        padding: 20px;
+    }
+    main, footer{
+        margin: 20px;
+    }
+    .section,
+    .hero,
+    .cards{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 48px;
+    }
+
+    .nav.active ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
