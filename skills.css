@@ -298,6 +298,7 @@ footer{
 
     main{
         margin: 20px;
+        padding-top: 50px;
     }
 
     .skills_hero{
@@ -340,14 +341,6 @@ footer{
     .journey_card{
         padding: 22px;
     }
-    .menu-toggle{
-        display: block;
-    }
-
-    .nav,
-    #button{
-        display: none;
-    }
     .nav{
         display: none;
     }
@@ -373,6 +366,26 @@ footer{
     .wave_box{
         display: none;
     }
+
+    .navbar{
+        padding: 12px 18px;
+    }
+
+    .logo img{
+        width: 28px;
+        height: 28px;
+    }
+
+    .logo h2{
+        font-size: 20px !important;
+    }
+
+    .menu-toggle{
+        display: block;
+        font-size: 22px;
+    }
+
+    
 }
 @media (max-width: 480px){
 

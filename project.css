@@ -235,19 +235,7 @@ footer{
 
     main{
         margin: 20px;
-    }
-
-    .menu-toggle{
-        display: block;
-    }
-
-    .nav,
-    #button{
-        display: none;
-    }
-
-    .navbar{
-        padding: 20px;
+        padding-top: 50px;
     }
 
     .projects_hero{
@@ -284,6 +272,7 @@ footer{
     }
 
     .menu-toggle{
+        font-size: 22px;
         display: block;
     }
 
@@ -294,27 +283,40 @@ footer{
     .nav{
         display: none;
     }
-    .nav,
-    #button{
-        display:none;
+
+    .navbar{
+        padding: 12px 18px;
     }
-    .nav.active ul{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+
+    .logo img{
+        width: 28px;
+        height: 28px;
     }
-    .nav.active{
+
+    .logo h2{
+        font-size: 20px !important;
+    }
+
+    .menu-toggle{
         display: block;
-        position: absolute;
-        top: 80px;
-        right: 20px;
-        width: 200px;
-        background: hsl(220,16%,8%);
-        border-radius: 10px;
-        padding: 20px;
+        font-size: 22px;
     }
-    .wave_box{
-        display: none;
+
+    .nav.active{
+        display:block;
+        position:absolute;
+        top:80px;
+        right:20px;
+        width:200px;
+        background:hsl(220,16%,8%);
+        border-radius:10px;
+        padding:20px;
+    }
+
+    .nav.active ul{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
     }
 }
 @media (max-width: 480px){

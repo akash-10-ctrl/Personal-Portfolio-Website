@@ -33,7 +33,6 @@ footer{
     background: hsl(26,80%,50%);
     border-radius: 10px;
 }
-
 .logo{
     display: flex;
     align-items: center;
@@ -53,8 +52,6 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-}
-.navbar{
     position: fixed;
     top: 0;
     left: 0;
@@ -64,7 +61,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
 
     background: rgba(10,10,10,0.6);
     backdrop-filter: blur(12px);
@@ -123,6 +119,8 @@ footer{
     text-decoration: none;
     color: hsl(26, 80%, 50%);
 }
+
+
 
 /*CSS content for Hero section*/
 .hero{
@@ -282,15 +280,12 @@ footer{
         font-size: 60px !important;
     }
 
-    h2{
-        font-size: 42px !important;
+    .hero h2{
+        font-size: 42px;
     }
 
     p{
         font-size: 16px;
-    }
-    .navbar{
-        padding: 20px 20px;
     }
     .list{
         gap: 20px;
@@ -299,9 +294,6 @@ footer{
         display: none;
         
     }
-
-}
-@media (max-width: 1024px){
     .hero{
         flex-direction: column-reverse;
         text-align: center;
@@ -325,7 +317,12 @@ footer{
         line-height: 70px;
     }
 }
-@media (max-width: 768px){
+@media (max-width:768px){
+
+    .menu-toggle{
+        font-size: 22px;
+        display: block;
+    }
     
     .hero h1{
         font-size: 60px;
@@ -346,6 +343,7 @@ footer{
         flex-direction: column;
         text-align: center;
         min-height: auto;
+        padding-top: 100px;
     }
 
     .hero_left{
@@ -353,7 +351,61 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-    
+
+    .nav{
+        display: none;
+    }
+    main, footer{
+        margin: 20px;
+    }
+    .section,
+    .hero,
+    .cards{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 28px;
+    }
+
+    .navbar{
+        padding: 12px 18px;
+    }
+
+    .logo img{
+        width: 28px;
+        height: 28px;
+    }
+
+    .logo h2{
+        font-size: 20px !important;
+    }
+
+    .menu-toggle{
+        display: block;
+        font-size: 22px;
+    }
+
+    .nav,
+    #button{
+        display:none;
+    }
+
+    .nav.active{
+        display:block;
+        position:absolute;
+        top:80px;
+        right:20px;
+        width:200px;
+        background:hsl(220,16%,8%);
+        border-radius:10px;
+        padding:20px;
+    }
+
+    .nav.active ul{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
 }
 @media (max-width: 480px){
     .hero h1{
@@ -362,10 +414,6 @@ footer{
     }
     .hero_right{
         display: none;
-    }
-    .hero h1{
-        font-size: 60px;
-        line-height: 65px;
     }
 
     .hero h2{
@@ -380,53 +428,5 @@ footer{
         font-size: 15px;
         line-height: 30px;
         letter-spacing: 0.5px;
-    }
-}
-@media (max-width:768px){
-
-    .menu-toggle{
-        display: block;
-    }
-
-    .nav,
-    #button{
-        display: none;
-    }
-    .nav{
-        display: none;
-    }
-    .nav,
-    #button{
-        display:none;
-    }
-}
-@media (max-width:768px){
-
-    .nav.active{
-        display: block;
-        position: absolute;
-        top: 80px;
-        right: 20px;
-        width: 200px;
-        background: hsl(220,16%,8%);
-        border-radius: 10px;
-        padding: 20px;
-    }
-    main, footer{
-        margin: 20px;
-    }
-    .section,
-    .hero,
-    .cards{
-        flex-direction: column;
-    }
-    h1{
-        font-size: 48px;
-    }
-
-    .nav.active ul{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
     }
 }
