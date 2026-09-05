@@ -34,4 +34,32 @@ if (filterButtons.length > 0) {
     });
 }
 
-console.log("JS WORKING");
+const v8Video = document.getElementById("v8Motion");
+const v8PlayButton = document.getElementById("videoPlayButton");
+
+if (v8Video && v8PlayButton) {
+
+    v8PlayButton.addEventListener("click", () => {
+        v8Video.play();
+    });
+
+    v8Video.addEventListener("click", () => {
+        if (v8Video.paused) {
+            v8Video.play();
+        } else {
+            v8Video.pause();
+        }
+    });
+
+    v8Video.addEventListener("play", () => {
+        v8PlayButton.classList.add("hidden");
+    });
+
+    v8Video.addEventListener("pause", () => {
+        v8PlayButton.classList.remove("hidden");
+    });
+
+    v8Video.addEventListener("ended", () => {
+        v8PlayButton.classList.remove("hidden");
+    });
+}
