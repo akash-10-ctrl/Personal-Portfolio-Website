@@ -17,12 +17,12 @@ header{
 }
 main{
     margin: 50px;
-    font-family:'Monteserrat',sans-serif ;
+    font-family:'Montserrat',sans-serif ;
 }
 footer{
     margin: 50px;
     margin-top: 10px;
-    font-family:'Monteserrat',sans-serif ;
+    font-family:'Montserrat',sans-serif ;
 }
 #name{
     background: linear-gradient(90deg, orange, violet);
@@ -51,7 +51,7 @@ footer{
 }
 .logo h2{
     font-weight: bold;
-    font-family: 'Monteserrat',sans-serif;
+    font-family: 'Montserrat',sans-serif;
 }
 .navbar{
     display: flex;
@@ -90,7 +90,7 @@ footer{
     text-decoration: none;
     color: white;
     padding-bottom: 30px;
-    font-family: monteserrat,sans-serif;
+    font-family: 'Montserrat',sans-serif;
 }
 .list li{
     text-align: center;

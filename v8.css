@@ -1,0 +1,634 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(220, 16%, 5%);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 3.5%;
+
+    background: rgba(10, 10, 10, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid hsla(26, 80%, 50%, 0.08);
+
+    z-index: 9999;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo h2 {
+    font-size: 25px;
+}
+
+
+/* Navigation */
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+
+    list-style: none;
+}
+
+.nav a {
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.nav a:hover {
+    color: hsl(26, 80%, 50%);
+}
+
+
+/* Let's Talk */
+
+#button button {
+    width: 170px;
+    height: 55px;
+
+    background: transparent;
+    color: hsl(26, 80%, 50%);
+
+    border: 1px solid hsl(26, 80%, 50%);
+    border-radius: 12px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#button button:hover {
+    background: hsl(26, 80%, 50%);
+    color: black;
+}
+
+
+/* Hamburger */
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   PROJECT HERO
+========================= */
+
+main {
+    padding-top: 78px;
+}
+
+.project_hero {
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 8% 80px;
+
+    text-align: center;
+}
+
+.hero_content {
+    max-width: 900px;
+}
+
+.project_hero h4 {
+    color: hsl(26, 80%, 50%);
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.project_hero h1 {
+    font-size: clamp(55px, 8vw, 110px);
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+.project_hero h1 span {
+    background: linear-gradient(
+        90deg,
+        hsl(26, 80%, 50%),
+        #9b59ff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project_hero > .hero_content > p {
+    max-width: 750px;
+    margin: auto;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: hsl(0, 0%, 72%);
+}
+
+
+/* Project information */
+
+.project_info {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+
+    margin-top: 55px;
+}
+
+.project_info h5 {
+    color: hsl(26, 80%, 50%);
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.project_info p {
+    font-size: 14px;
+    color: white;
+}
+
+
+/* =========================
+   MAIN MODEL
+========================= */
+
+.main_model {
+    padding: 20px 6% 100px;
+}
+
+.model_image {
+    width: 100%;
+    max-width: 1400px;
+    height: 650px;
+
+    margin: auto;
+
+    border: 1px solid hsla(26, 80%, 50%, 0.18);
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: hsl(220, 16%, 8%);
+}
+
+.model_image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+.project_overview,
+.components,
+.design_process,
+.gallery {
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 100px 6%;
+}
+
+.section_title {
+    margin-bottom: 50px;
+}
+
+.section_title h4 {
+    color: hsl(26, 80%, 50%);
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.section_title h2 {
+    font-size: 42px;
+}
+
+
+/* =========================
+   OVERVIEW
+========================= */
+
+.project_overview {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+
+    border-top: 1px solid hsla(255, 255%, 255%, 0.08);
+}
+
+.overview_text {
+    padding-top: 5px;
+}
+
+.overview_text p {
+    color: hsl(0, 0%, 72%);
+    line-height: 1.9;
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   COMPONENTS
+========================= */
+
+.component_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.component_card {
+    padding: 35px;
+
+    background: hsl(220, 16%, 8%);
+
+    border: 1px solid hsla(26, 80%, 50%, 0.12);
+    border-radius: 15px;
+
+    transition: 0.3s ease;
+}
+
+.component_card:hover {
+    transform: translateY(-5px);
+    border-color: hsla(26, 80%, 50%, 0.5);
+}
+
+.component_card h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.component_card p {
+    color: hsl(0, 0%, 65%);
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* =========================
+   DESIGN PROCESS
+========================= */
+
+.process_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.process_grid > div {
+    padding: 30px;
+
+    border-left: 1px solid hsl(26, 80%, 50%);
+}
+
+.process_grid span {
+    font-size: 13px;
+    color: hsl(26, 80%, 50%);
+    letter-spacing: 2px;
+}
+
+.process_grid h3 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.process_grid p {
+    color: hsl(0, 0%, 65%);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery_item {
+    height: 400px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+    border: 1px solid hsla(26, 80%, 50%, 0.12);
+
+    background: hsl(220, 16%, 8%);
+}
+
+.gallery_item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.5s ease;
+}
+
+.gallery_item:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   BACK TO PROJECTS
+========================= */
+
+.back_projects {
+    padding: 40px 6% 100px;
+
+    text-align: center;
+}
+
+.back_projects a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 15px 25px;
+
+    border: 1px solid hsl(26, 80%, 50%);
+    border-radius: 10px;
+
+    color: hsl(26, 80%, 50%);
+
+    transition: 0.3s ease;
+}
+
+.back_projects a:hover {
+    background: hsl(26, 80%, 50%);
+    color: black;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+    .nav ul {
+        gap: 25px;
+    }
+
+    .project_hero {
+        padding: 90px 6%;
+    }
+
+    .project_info {
+        gap: 45px;
+    }
+
+    .model_image {
+        height: 500px;
+    }
+
+    .project_overview {
+        gap: 40px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: 70px;
+        padding: 12px 18px;
+    }
+
+    .logo img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .logo h2 {
+        font-size: 20px !important;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 22px;
+    }
+
+    .nav,
+    #button {
+        display: none;
+    }
+
+    .nav.active {
+        display: block;
+
+        position: absolute;
+
+        top: 70px;
+        right: 18px;
+
+        width: 200px;
+
+        padding: 20px;
+
+        background: hsl(220, 16%, 8%);
+
+        border-radius: 10px;
+
+        border: 1px solid hsla(26, 80%, 50%, 0.15);
+    }
+
+    .nav.active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    main {
+        padding-top: 70px;
+    }
+
+
+    .project_hero {
+        min-height: auto;
+        padding: 80px 20px;
+    }
+
+    .project_hero h1 {
+        font-size: 55px;
+    }
+
+    .project_hero > .hero_content > p {
+        font-size: 15px;
+    }
+
+
+    .project_info {
+        flex-direction: column;
+        gap: 25px;
+
+        margin-top: 40px;
+    }
+
+
+    .main_model {
+        padding: 10px 20px 70px;
+    }
+
+    .model_image {
+        height: 350px;
+        border-radius: 15px;
+    }
+
+
+    .project_overview,
+    .components,
+    .design_process,
+    .gallery {
+        padding: 70px 20px;
+    }
+
+    .project_overview {
+        display: block;
+    }
+
+    .overview_text {
+        margin-top: 30px;
+    }
+
+
+    .section_title h2 {
+        font-size: 32px;
+    }
+
+
+    .component_grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .process_grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery_item {
+        height: 300px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .project_hero {
+        padding: 65px 18px;
+    }
+
+    .project_hero h1 {
+        font-size: 43px;
+    }
+
+    .project_hero h4 {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .model_image {
+        height: 250px;
+    }
+
+    .section_title h2 {
+        font-size: 28px;
+    }
+
+    .component_card {
+        padding: 25px;
+    }
+
+    .gallery_item {
+        height: 230px;
+    }
+
+}

@@ -7,6 +7,7 @@ body{
         radial-gradient(circle at top right, hsla(26,80%,50%,0.10), transparent 30%),
         radial-gradient(circle at bottom left, hsla(280,80%,60%,0.08), transparent 30%),
         hsl(220,16%,4%);
+    font-family: 'Montserrat',sans-serif;
     color: white;
     margin: 0;;
     color: white;
@@ -17,12 +18,12 @@ header{
 }
 main{
     margin: 50px;
-    font-family:'Monteserrat',sans-serif ;
+    font-family:'Montserrat',sans-serif ;
 }
 footer{
     margin: 50px;
     margin-top: 10px;
-    font-family:'Monteserrat',sans-serif ;
+    font-family:'Montserrat',sans-serif ;
 }
 ::-webkit-scrollbar{
     width: 8px;
@@ -46,7 +47,7 @@ footer{
 }
 .logo h2{
     font-weight: bold;
-    font-family: 'Monteserrat',sans-serif;
+    font-family: 'Montserrat',sans-serif;
 }
 .navbar{
     display: flex;
@@ -81,7 +82,7 @@ footer{
     text-decoration: none;
     color: white;
     padding-bottom: 30px;
-    font-family: monteserrat,sans-serif;
+    font-family: 'Montserrat',sans-serif;
 }
 .list li{
     text-align: center;
